@@ -3,6 +3,7 @@ import {
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
+	NodeConnectionType,
 } from 'n8n-workflow';
 import normalizeUrl from 'normalize-url';
 import type { Options as normalizeUrlOptions } from 'normalize-url';
@@ -18,8 +19,8 @@ export class NormalizeUrl implements INodeType {
 		defaults: {
 			name: 'Normalize URL',
 		},
-		inputs: ['main'],
-		outputs: ['main'],
+		inputs: ['main' as NodeConnectionType],
+		outputs: ['main' as NodeConnectionType],
 		properties: [
 			{
 				displayName: 'URL',
