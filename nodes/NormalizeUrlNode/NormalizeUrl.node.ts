@@ -19,8 +19,8 @@ export class NormalizeUrl implements INodeType {
 		defaults: {
 			name: 'Normalize URL',
 		},
-		inputs: ['main' as NodeConnectionType],
-		outputs: ['main' as NodeConnectionType],
+		inputs: ['main'],
+		outputs: ['main'],
 		properties: [
 			{
 				displayName: 'URL',
@@ -92,7 +92,7 @@ export class NormalizeUrl implements INodeType {
 						name: 'stripWWW',
 						type: 'boolean',
 						default: true,
-						description: 'Remove www. from the URL',
+						description: 'Remove www. from the URL.',
 					},
 					{
 						displayName: 'Remove Query Parameters',
